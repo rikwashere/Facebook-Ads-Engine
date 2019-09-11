@@ -1,0 +1,5 @@
+unicodecsv
+datetime
+requests
+pandas
+bs4
