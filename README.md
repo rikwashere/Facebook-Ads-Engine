@@ -10,7 +10,7 @@ You can find my Twitter bot in action <a href='https://twitter.com/fbadtrackernl
 - Clone repository
 - run: <pip install -r requirements.txt> from shell
 - Add API keys to helpers.py
-   - Add Twitter keys to helpers/connectTwitter(), <a href='https://developer.twitter.com/en/docs/basics/authentication/guides/access-        tokens.html'>see Twitter docs<a/>.
+   - Add Twitter keys to helpers/connectTwitter(), <a href='https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html'>see Twitter docs<a/>.
   - For Facebook acces token, follow these steps:
     - Get user access token from <a href='https://developers.facebook.com/tools/explorer/?classic=0'>Graph API Explorer</a>.
     - Extend access token using <a href='https://developers.facebook.com/tools/debug/accesstoken/'>access token debugger</a>. 
