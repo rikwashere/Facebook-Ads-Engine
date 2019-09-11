@@ -23,3 +23,4 @@ Helpers.py contains a function returnActiveAds() that returns all ads currently 
 
 # To do
 Do something about Facebook token expiring.
+Tweet our more significant data, possibly pictures?
