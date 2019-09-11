@@ -214,4 +214,4 @@ if __name__ == "__main__":
 	client = MongoClient()
 	db = client.adlibrary
 	print '%i ads in libary. %i are active.' % (db.ads.count(), len(returnActiveAds(db.ads.find())))
-  sys.exit()
+	sys.exit()
