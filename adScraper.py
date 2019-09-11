@@ -95,12 +95,13 @@ def sendTweet(ad):
 		if page == parties[party]['page_title']:
 			twitter_handle = parties[party]['twitter_handle']
 
-	msg = '@FbAdTrackerNL Nieuwe advertentie door {}. \n- Geschat bereik: {} - {}\n- Geschatte kosten: {} - {}\nTekst: "'.format( twitter_handle, int(ad['impressions']['lower_bound']), int(ad['impressions']['upper_bound']),	int(ad['spend']['lower_bound']), int(ad['spend']['upper_bound']) )
+	# Update tweet message here, don't forget the character limit!			
+	msg = 'Nieuwe advertentie door {}. \n- Geschat bereik: {} - {}\n- Geschatte kosten: {} - {}\nTekst: "'.format( twitter_handle, int(ad['impressions']['lower_bound']), int(ad['impressions']['upper_bound']),	int(ad['spend']['lower_bound']), int(ad['spend']['upper_bound']) )
 
 	msg += ad['ad_creative_body'][:276 - len(msg)] + '..."'
 	
 	try:
-		tweet = twitter.update_status(status=msg, in_reply_to_status_id=1115982344941391874)
+		tweet = twitter.update_status(status=msg)
 	except:
 		print msg
 
